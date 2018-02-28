@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Num1,Num2,Num3,Num4;
+    cout << "Ingrese el primer numero: "<< endl;
+    cin >> Num1;
+    cout << "Ingrese el segundo numero: "<< endl;
+    cin >> Num2;
+    cout << "Ingrese el tercer numero: "<< endl;
+    cin >> Num3;
+    if (Num1<Num2 && Num2<Num3)
+    {
+        cout << "Los numeros fueron ingresados en forma ascendente";
+    }
+    else
+    {
+        cout << "Los numeros fueron ingresados en forma desordenada";
+    }
+    return 0;
+}

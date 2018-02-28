@@ -1,0 +1,161 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Num1,Num2,Num3,Num4;
+    cout << "Ingrese el primer numero: "<< endl;
+    cin >> Num1;
+    cout << "Ingrese el segundo numero: "<< endl;
+    cin >> Num2;
+    cout << "Ingrese el tercer numero: "<< endl;
+    cin >> Num3;
+    cout << "Ingrese el cuarto numero: "<< endl;
+    cin >> Num4;
+    if (Num1<Num2 && Num1<Num3 && Num1<Num4)
+    {
+        if (Num2<Num3 && Num2<Num4)
+        {
+            if (Num3<Num4)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num1<<endl<<Num2<<endl<<Num3<<endl<<Num4;
+            }
+            else if (Num4<Num3)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num1<<endl<<Num2<<endl<<Num4<<endl<<Num3;
+            }
+        }
+        else if (Num3<Num2 && Num3<Num4)
+        {
+            if (Num2<Num4)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num1<<endl<<Num3<<endl<<Num2<<endl<<Num4;
+            }
+            else if (Num4<Num2)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num1<<endl<<Num3<<endl<<Num4<<endl<<Num2;
+            }
+        }
+         else if (Num4<Num2 && Num4<Num3)
+        {
+            if (Num2<Num3)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num1<<endl<<Num4<<endl<<Num2<<endl<<Num3;
+            }
+            else if (Num3<Num2)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num1<<endl<<Num4<<endl<<Num3<<endl<<Num2;
+            }
+        }
+    }
+    if (Num2<Num1 && Num2<Num3 && Num2<Num4)
+    {
+        if (Num1<Num3 && Num1<Num4)
+        {
+            if (Num3<Num4)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num2<<endl<<Num1<<endl<<Num3<<endl<<Num4;
+            }
+            else if (Num4<Num3)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num2<<endl<<Num1<<endl<<Num4<<endl<<Num3;
+            }
+        }
+        else if (Num3<Num1 && Num3<Num4)
+        {
+            if (Num1<Num4)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num2<<endl<<Num3<<endl<<Num1<<endl<<Num4;
+            }
+            else if (Num4<Num1)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num2<<endl<<Num3<<endl<<Num4<<endl<<Num1;
+            }
+        }
+         else if (Num4<Num1 && Num4<Num3)
+        {
+            if (Num1<Num3)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num2<<endl<<Num4<<endl<<Num1<<endl<<Num3;
+            }
+            else if (Num3<Num1)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num2<<endl<<Num4<<endl<<Num3<<endl<<Num1;
+            }
+        }
+    }
+    if (Num3<Num2 && Num3<Num1 && Num3<Num4)
+    {
+        if (Num2<Num1 && Num2<Num4)
+        {
+            if (Num1<Num4)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num3<<endl<<Num2<<endl<<Num1<<endl<<Num4;
+            }
+            else if (Num4<Num1)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num3<<endl<<Num2<<endl<<Num4<<endl<<Num1;
+            }
+        }
+        else if (Num1<Num2 && Num1<Num4)
+        {
+            if (Num2<Num4)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num3<<endl<<Num1<<endl<<Num2<<endl<<Num4;
+            }
+            else if (Num4<Num2)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num3<<endl<<Num1<<endl<<Num4<<endl<<Num2;
+            }
+        }
+         else if (Num4<Num2 && Num4<Num1)
+        {
+            if (Num2<Num1)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num3<<endl<<Num4<<endl<<Num2<<endl<<Num1;
+            }
+            else if (Num1<Num2)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num3<<endl<<Num4<<endl<<Num1<<endl<<Num2;
+            }
+        }
+    }
+    if (Num4<Num2 && Num4<Num3 && Num4<Num1)
+    {
+        if (Num2<Num3 && Num2<Num1)
+        {
+            if (Num3<Num1)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num4<<endl<<Num2<<endl<<Num3<<endl<<Num1;
+            }
+            else if (Num1<Num3)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num4<<endl<<Num2<<endl<<Num1<<endl<<Num3;
+            }
+        }
+        else if (Num3<Num2 && Num3<Num1)
+        {
+            if (Num2<Num1)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num4<<endl<<Num3<<endl<<Num2<<endl<<Num1;
+            }
+            else if (Num1<Num2)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num4<<endl<<Num3<<endl<<Num1<<endl<<Num2;
+            }
+        }
+         else if (Num1<Num2 && Num1<Num3)
+        {
+            if (Num2<Num3)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num4<<endl<<Num1<<endl<<Num2<<endl<<Num3;
+            }
+            else if (Num3<Num2)
+            {
+                cout << "El orden de los numeros es: "<<endl<<Num4<<endl<<Num1<<endl<<Num3<<endl<<Num2;
+            }
+        }
+    }
+    return 0;
+}

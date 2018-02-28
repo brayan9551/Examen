@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Num;
+    cout << "Ingrese un numero del 1 al 7: "<< endl;
+    cin >> Num;
+    switch (Num)
+    {
+        case 1:
+            cout << "El dia elegido es Lunes"<<endl;
+            break;
+        case 2:
+            cout << "El dia elegido es Martes"<<endl;
+            break;
+        case 3:
+            cout << "El dia elegido es Miercoles"<<endl;
+            break;
+        case 4:
+            cout << "El dia elegido es Jueves"<<endl;
+            break;
+        case 5:
+            cout << "El dia elegido es Viernes"<<endl;
+            break;
+        case 6:
+            cout << "El dia elegido es Sabado"<<endl;
+            break;
+        case 7:
+            cout << "El dia elegido es Domingo"<<endl;
+            break;
+        default:
+            cout << "El numero elegido no es una opcion"<<endl;
+            break;
+    }
+    return 0;
+}
